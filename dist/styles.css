@@ -1,0 +1,48 @@
+body {
+    border: solid;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.row {
+    display: flex
+}
+
+.cell {
+    border: solid 1px;
+    width: 3vh;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.cell:hover>i {
+    visibility: visible;
+}
+
+.hasShip {
+    background-color: brown;
+}
+
+.board-container {
+    display: flex;
+    justify-content: space-around;
+}
