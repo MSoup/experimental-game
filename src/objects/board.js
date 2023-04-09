@@ -1,4 +1,8 @@
-import { isPlaceable } from "../utils";
+// import { isPlaceable } from "../utils";
+
+function isPlaceable() {
+    return true
+}
 
 class Board {
     constructor(n = 10) {
@@ -32,7 +36,7 @@ class Board {
     }
 
     placeWholeShip(x, y, length, orientation = "horizontal") {
-        if (!isPlaceable(x, y, length, this.gameBoard)) {
+        if (!isPlaceable([x, y], length, this.gameBoard)) {
             throw new Error("Not placeable at this location:", x, y)
         }
         else if (orientation === "horizontal") {

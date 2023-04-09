@@ -30,9 +30,6 @@ function bindShip(x, y, board, player) {
     }
 }
 
-function isPlaceable(x, y, length, board) {
-    return true
-}
 
 // function isPlaceable(x, y, length, board) {
 //     if (board.orientation === "horizontal") {
@@ -57,4 +54,4 @@ function isPlaceable(x, y, length, board) {
 //     }
 // }
 
-export { bindShip, isPlaceable }
+export { bindShip }
